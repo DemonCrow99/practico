@@ -1,0 +1,356 @@
+/* Importar las fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Inter:wght@400;500;600&display=swap');
+
+/* Fondos */
+
+.bg-negro {
+  background-color: #121212;
+}
+
+.bg-gris {
+  background-color: #3D3C3C;
+}
+
+.bg-verde {
+  background-color: #00724A;
+}
+
+.bg-gris-claro {
+  background-color: #D9D9D9;
+}
+
+/* Color de texto */
+
+.text-negro {
+  color: #121212;
+}
+
+.text-gris {
+  color: #3D3C3C;
+}
+
+.text-verde {
+  color: #00724A;
+}
+
+.text-gris-claro {
+  color: #D9D9D9;
+}
+
+/* Tipografía */
+
+.fuente-titulo {
+  font-family: 'Cinzel Decorative', serif;
+}
+
+.fuente-principal {
+  font-family: 'Inter', sans-serif;
+}
+
+/*Menu*/
+.menu-toggle {
+  background: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.menu-toggle span {
+  width: 26px;
+  height: 2px;
+  background-color: #D9D9D9;
+  display: block;
+}
+
+#nav-links-container {
+  display: none;
+}
+
+#nav-links-container.abierto {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  #nav-links-container {
+    display: block !important;
+  }
+}
+
+/* Hero */
+
+.hero-bg {
+  background-image: url('../assets/imagenes/HeroImagen.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #00724A;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-title {
+  font-family: 'Cinzel Decorative', serif;
+  color: #D9D9D9;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.hero-highlight {
+  color: #00724A;
+  margin-top: 12px;
+}
+
+
+/*catalogo*/
+.catalogo-section {
+  padding: 60px 0;
+}
+
+.catalogo-label {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  color: #00724A;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.catalogo-title {
+  font-family: 'Inter', sans-serif;
+  color: #D9D9D9;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.filtro-btn {
+  background-color: transparent;
+  color: #D9D9D9;
+  border: 1px solid #3D3C3C;
+  border-radius: 6px;
+  padding: 6px 16px;
+  font-size: 14px;
+  white-space: nowrap;
+
+}
+
+.filtro-btn.activo {
+  background-color: #00724A;
+  border-color: #00724A;
+  color: #D9D9D9;
+
+}
+
+
+/*cards*/
+.categoria-subtitulo {
+    font-size: 0.85rem;
+    letter-spacing: 1.5px;
+    color: #D9D9D9;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: transparent;
+    display: inline-block;
+}
+
+.card-coleccion {
+    background-color: #121212;
+    border: 1px solid #3D3C3C;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-preview {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.preview-titulo {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #D9D9D9;
+}
+
+.card-info {
+    padding: 16px;
+    background-color: #3D3C3C;
+}
+
+.item-titulo {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #D9D9D9;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-autor {
+    font-size: 0.8rem;
+    color: #D9D9D9;
+    margin-bottom: 12px;
+    opacity: 0.85;
+}
+
+.card-footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.badge-tipo {
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+.badge-libro {
+    background-color: rgba(0, 114, 74, 0.1); 
+    color: #00724A;
+    border: 1px solid rgba(0, 114, 74, 0.3);
+}
+
+.badge-revista {
+    background-color: rgba(0, 114, 74, 0.1); 
+    color: #00724A;
+    border: 1px solid rgba(0, 114, 74, 0.3);
+}
+
+.badge-audio {
+    background-color: rgba(0, 114, 74, 0.1); 
+    color: #00724A;
+    border: 1px solid rgba(0, 114, 74, 0.3);
+}
+.item-rating {
+    font-size: 0.8rem;
+    color: #D9D9D9;
+}
+
+/* --- Paleta de Colores de Fondo (Previews) --- */
+.bg-verde-oscuro   { background-color: #1b3324; }
+.bg-rojo-oscuro    { background-color: #2c1a1a; }
+.bg-azul-oscuro    { background-color: #1a1c2e; }
+.bg-amarillo-oscuro{ background-color: #2b2818; }
+.bg-cian-oscuro    { background-color: #182b2e; }
+.bg-purpura-oscuro { background-color: #2a182b; }
+.bg-bosque-oscuro  { background-color: #1d301b; }
+.bg-marino-oscuro  { background-color: #1b1e30; }
+.bg-terracota-oscuro{ background-color: #2d1d1a; }
+
+
+/*autores*/
+
+/* --- Estilos de la Sección Autores --- */
+.card-autor {
+    background-color: #3D3C3C; /* Tu color bg-gris */
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 100%;
+}
+
+/* Recuadro de iniciales en verde */
+.autor-iniciales {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(0, 114, 74, 0.15); 
+    color: #00724A;
+    border: 1px solid rgba(0, 114, 74, 0.3);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+
+.autor-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.autor-nombre {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 0 2px 0;
+    line-height: 1.2;
+}
+
+.autor-obras {
+    font-size: 0.75rem;
+    color: #D9D9D9;
+    margin: 0;
+}
+
+/*Cta*/
+.cta-titulo-principal {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #D9D9D9;
+}
+
+.cta-titulo-secundario {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #00724A;
+}
+
+.cta-texto, 
+.footer-texto, 
+.footer-enlace {
+    font-family: 'Inter', sans-serif;
+}
+
+.decoracion-linea {
+    width: 40px;
+    height: 2px;
+    background-color: #00724A;
+}
+
+.cta-texto {
+    font-size: 0.95rem;
+    color: #8c8c8c;
+}
+
+/*footer*/
+.footer-texto {
+    font-size: 0.8rem;
+    color: #5a5a5a;
+}
+
+.footer-enlace {
+    font-size: 0.8rem;
+    color: #5a5a5a;
+    text-decoration: none;
+}
+
+.footer-enlace:hover {
+    color: #D9D9D9;
+}

@@ -1,0 +1,45 @@
+/* Estilos de Login, Dashboard y página de usuario (usa la paleta de style.css) */
+body.pagina-auth { background-color: #121212; color: #D9D9D9; font-family: 'Inter', sans-serif; min-height: 100vh; }
+
+/* Login */
+.login-wrap { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px;
+  background: radial-gradient(circle at top, #1c1c1c 0%, #121212 60%); }
+.login-card { width: 100%; max-width: 400px; background: #1a1a1a; border: 1px solid #3D3C3C; border-radius: 12px; padding: 36px 32px; }
+.login-card img { height: 60px; }
+.login-titulo { font-family: 'Cinzel Decorative', serif; font-size: 24px; color: #D9D9D9; }
+.login-card label { font-size: 13px; color: #D9D9D9; margin-bottom: 6px; }
+.login-card .form-control { background: #121212; border: 1px solid #3D3C3C; color: #D9D9D9; padding: 10px 12px; }
+.login-card .form-control:focus { border-color: #00724A; box-shadow: 0 0 0 .2rem rgba(0,114,74,.25); background: #121212; color: #D9D9D9; }
+.btn-arca { background: #00724A; color: #fff; border: none; padding: 10px 16px; font-weight: 600; border-radius: 8px; }
+.btn-arca:hover { background: #005c3b; color: #fff; }
+.btn-arca:disabled { opacity: .6; }
+.btn-arca-outline { background: transparent; color: #D9D9D9; border: 1px solid #3D3C3C; border-radius: 8px; padding: 6px 14px; }
+.btn-arca-outline:hover { border-color: #00724A; color: #fff; }
+.link-volver { color: #D9D9D9; opacity: .7; font-size: 14px; text-decoration: none; }
+.link-volver:hover { opacity: 1; color: #00724A; }
+
+/* Dashboard */
+.panel-layout { display: flex; min-height: 100vh; }
+.panel-sidebar { width: 250px; background: #0b0b0b; border-right: 1px solid #3D3C3C; padding: 24px 16px; display: flex; flex-direction: column; flex-shrink: 0; }
+.panel-sidebar img { height: 48px; }
+.panel-etiqueta { font-size: 11px; letter-spacing: 1.5px; text-transform: uppercase; color: #00724A; margin: 18px 0 14px; }
+.panel-link { display: block; padding: 10px 12px; border-radius: 8px; color: #D9D9D9; text-decoration: none; margin-bottom: 4px; font-size: 15px; }
+.panel-link:hover { background: #1c1c1c; color: #fff; }
+.panel-link.activo { background: #00724A; color: #fff; }
+.panel-main { flex: 1; min-width: 0; }
+.panel-topbar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px 28px; background: #1a1a1a; border-bottom: 1px solid #3D3C3C; }
+.panel-usuario { display: flex; align-items: center; gap: 12px; }
+.panel-avatar { width: 38px; height: 38px; border-radius: 50%; background: #00724A; color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 600; }
+.panel-badge-rol { font-size: 11px; background: #3D3C3C; border-radius: 20px; padding: 2px 10px; color: #D9D9D9; }
+.panel-cuerpo { padding: 28px; }
+.panel-titulo { font-family: 'Cinzel Decorative', serif; font-size: 26px; margin-bottom: 4px; }
+.panel-card { background: #1a1a1a; border: 1px solid #3D3C3C; border-radius: 12px; padding: 24px; }
+.panel-vacio { border: 1px dashed #3D3C3C; border-radius: 12px; padding: 48px 20px; text-align: center; opacity: .8; }
+.panel-toggle { display: none; background: none; border: 1px solid #3D3C3C; color: #D9D9D9; border-radius: 8px; padding: 4px 10px; }
+
+@media (max-width: 991px) {
+  .panel-sidebar { position: fixed; top: 0; left: -260px; height: 100vh; z-index: 1000; transition: left .2s; }
+  .panel-sidebar.abierto { left: 0; }
+  .panel-toggle { display: inline-block; }
+  .panel-cuerpo { padding: 18px; }
+}
